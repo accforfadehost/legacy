@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#f5f7fb">
+    <title>LEGACY — Professional platforma</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <section class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-card"><a class="brand welcome-brand"><span
+                    class="brand-mark"><img src="./images/legacy-logo.png" alt=""></span><span>LEGACY</span></a>
+            <div class="eyebrow"><i class="eyebrow-dot"></i> PROFESSIONAL PLATFORM</div>
+            <h1>Imkoniyatlar<br><span>shu yerdan</span> boshlanadi.</h1>
+            <p class="welcome-copy">Mutaxassislarni toping, xizmat taklif qiling va ishonchli hamkorlik yarating.</p>
+            <div class="welcome-actions"><button class="primary-btn" id="welcomeLogin">Akkauntga kirish
+                    →</button><button class="guest-btn" id="guestMode">Mehmon rejimida davom etish ↗</button></div>
+            <div class="welcome-register">Akkauntingiz yo‘qmi? <button id="welcomeRegister">Ro‘yxatdan o‘tish</button>
+            </div>
+            <div class="welcome-bottom"><span>LEGACY</span><span>CONNECT · CREATE · GROW</span></div>
+        </div>
+        <div class="welcome-orb orb-one"></div>
+        <div class="welcome-orb orb-two"></div>
+    </section>
+    <div class="app-shell" id="appShell" hidden>
+        <header class="topbar"><a class="brand" href="#"><span class="brand-mark"><img src="./images/legacy-logo.png" alt=""></span><span>LEGACY</span></a>
+            <div class="top-actions"><button class="icon-btn" id="favoritesButton" title="Saqlangan ustalar">♡ <span
+                        id="favoriteCount">0</span></button><span id="authLabel">Mehmon rejimi</span><button
+                    class="small-btn" id="authButton">Kirish</button></div>
+        </header>
+        <main id="mainContent">
+            <section class="page active" data-page="home">
+                <div class="hero">
+                    <div class="eyebrow"><i class="eyebrow-dot"></i> PROFESSIONAL PLATFORM</div>
+                    <h1>Kerakli mutaxassis<br><span>bir necha qadamda.</span></h1>
+                    <p class="hero-copy">120 ta kasbiy yo‘nalish, haqiqiy profillar va bajarilgan buyurtmalarga
+                        asoslangan reytinglar.</p>
+                    <div class="hero-actions"><button class="primary-btn" data-go="specialists">Mutaxassislarni topish
+                            ↗</button><button class="text-btn" data-action="register">Mutaxassis sifatida
+                            qo‘shilish</button></div>
+                    <div class="hero-foot"><span class="avatar-stack"><i>✦</i><i>⌘</i><i>◈</i></span><span>Kasb, sifat
+                            va ishonch bir joyda</span></div>
+                </div>
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow muted">QANDAY ISHLAYDI</div>
+                        <h2>Oddiy. Shaffof. Ishonchli.</h2>
+                    </div>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon violet">⌕</div>
+                        <h3>Mutaxassis toping</h3>
+                        <p>Kasb, narx, hudud va xizmat turi bo‘yicha qidiring.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon blue">↗</div>
+                        <h3>Buyurtma yuboring</h3>
+                        <p>Usta qabul qilgach, ish jarayonini kuzating.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon amber">★</div>
+                        <h3>Haqiqiy reyting</h3>
+                        <p>Faqat yakunlangan buyurtma uchun baho bering.</p>
+                    </article>
+                </div>
+            </section>
+            <section class="page" data-page="specialists">
+                <div class="page-intro">
+                    <div class="eyebrow muted">TALANTLAR HAMJAMIYATI</div>
+                    <h1>Mutaxassislar</h1>
+                    <p>Kasbiy yo‘nalish bo‘yicha eng munosib mutaxassislarni toping.</p>
+                </div>
+                <div class="search-wrap"><span>⌕</span><input id="specialistSearch"
+                        placeholder="Kasb, ism yoki xizmatni qidiring..."><button class="filter-open"
+                        id="openFilters">Filtrlar <span>☷</span></button></div>
+                <div class="filter-summary" id="filterSummary"></div>
+                <div id="categoryChips" class="chips"></div>
+                <div id="specialistList" class="people-list"></div>
+            </section>
+            <section class="page" data-page="settings">
+                <div class="page-intro">
+                    <div class="eyebrow muted">SHAXSIY SOZLAMALAR</div>
+                    <h1>Sozlamalar</h1>
+                    <p>Til va ilova ko‘rinishini boshqaring.</p>
+                </div>
+                <div class="settings-card">
+                    <h3>Ilova tili</h3>
+                    <p>Interfeys tilini tanlang.</p>
+                    <div class="language-options"><button data-lang="uz" class="active">O‘zbekcha</button><button
+                            data-lang="ru">Русский</button><button data-lang="en">English</button></div>
+                    <h3 data-i18n="appearance">Ko‘rinish</h3>
+                    <p data-i18n="appearance_desc">Tungi yoki kunduzgi rejimni tanlang.</p>
+                    <div class="theme-options"><button type="button" id="lightTheme" data-theme-choice="light">☀️ <span
+                                data-i18n="light">Kunduzgi</span></button><button type="button" id="darkTheme"
+                            data-theme-choice="dark">🌙 <span data-i18n="dark">Tungi</span></button></div>
+                    <div class="settings-note">Filtr tanlovlari qurilmangizda saqlanadi va keyingi kirishda tiklanadi.
+                    </div>
+                </div>
+            </section>
+            <section class="page" data-page="profile">
+                <div class="page-intro">
+                    <div class="eyebrow muted">SHAXSIY MAYDON</div>
+                    <h1>Profil</h1>
+                    <p>Profilingizni ko‘ring, buyurtmalar va ma’lumotlaringizni boshqaring.</p>
+                </div>
+                <div id="profileView" class="profile-card"></div>
+                <div class="section-heading">
+                    <div>
+                        <div class="eyebrow muted">FAOLIYAT</div>
+                        <h2>Buyurtmalarim</h2>
+                    </div>
+                </div>
+                <div id="myOrders" class="orders-list"></div>
+            </section>
+        </main>
+        <nav class="floating-nav">
+            <div class="nav-track" id="navTrack">
+                <div class="liquid-indicator" id="liquidIndicator"></div><button class="nav-item selected"
+                    data-target="home"><span class="nav-icon">⌂</span><span>Asosiy</span></button><button
+                    class="nav-item" data-target="specialists"><span
+                        class="nav-icon">⌘</span><span>Ustalar</span></button><button class="nav-item"
+                    data-target="settings"><span class="nav-icon">⚙</span><span>Sozlamalar</span></button><button
+                    class="nav-item" data-target="profile"><span class="nav-icon">◉</span><span>Profil</span></button>
+            </div>
+        </nav>
+    </div>
+    <dialog id="authDialog" class="auth-dialog">
+        <form method="dialog" class="dialog-close"><button>×</button></form>
+        <div class="dialog-brand"><span class="brand-mark"><img src="./images/legacy-logo.png" alt=""></span> LEGACY</div>
+        <div id="registerPanel" hidden>
+            <div class="eyebrow muted">HAMJAMIYATGA QO‘SHILING</div>
+            <h2>Hisob yarating</h2>
+            <form id="registerForm" class="auth-form"><label>Ism<input name="firstName" required
+                        maxlength="60"></label><label>Familiya<input name="lastName" required
+                        maxlength="60"></label><label>Email<input name="email" type="email"
+                        required></label><label>Parol<input name="password" type="password" minlength="8"
+                        required></label><label>Akkaunt turi<select name="role" id="registerRole">
+                        <option value="specialist">Mutaxassis</option>
+                        <option value="client">Buyurtmachi</option>
+                    </select></label>
+                <div id="specialistFields"><label>Telefon raqami<input name="phone" placeholder="+998901234567"
+                            type="tel"></label><label>Kasbiy yo‘nalish<select name="specialty"
+                            id="registerSpecialty"></select></label><label>Hudud<input name="region"
+                            placeholder="Toshkent shahri"></label><label>Xizmat joyi<select name="serviceTypes" multiple
+                            size="4">
+                            <option value="home">Mijozning uyida</option>
+                            <option value="workplace">Ustaning ishxonasida</option>
+                            <option value="client_location">Kelishilgan manzilda</option>
+                            <option value="remote">Masofadan / onlayn</option>
+                        </select></label></div><button class="primary-btn full" type="submit">Ro‘yxatdan o‘tish
+                    →</button>
+            </form>
+            <p class="switch-auth">Akkauntingiz bormi? <button id="showLogin">Kirish</button></p>
+        </div>
+        <div id="loginPanel">
+            <div class="eyebrow muted">QAYTGANINGIZDAN XURSANDMIZ</div>
+            <h2>Hisobga kirish</h2>
+            <form id="loginForm" class="auth-form"><label>Email<input name="email" type="email"
+                        required></label><label>Parol<input name="password" type="password" required></label><button
+                    class="primary-btn full">Kirish →</button></form>
+            <p class="switch-auth">Akkauntingiz yo‘qmi? <button id="showRegister">Ro‘yxatdan o‘tish</button></p>
+        </div>
+        <p id="formMessage" class="form-message"></p>
+    </dialog>
+    <dialog id="detailDialog" class="auth-dialog wide-dialog">
+        <form method="dialog" class="dialog-close"><button>×</button></form>
+        <div id="specialistDetail"></div>
+    </dialog>
+    <dialog id="editDialog" class="auth-dialog">
+        <form method="dialog" class="dialog-close"><button>×</button></form>
+        <h2>Profilni tahrirlash</h2>
+        <form id="editForm" class="auth-form"><label>Ism va familiya<input name="name"
+                    required></label><label>Telefon<input name="phone" type="tel"></label><label>Kasbiy yo‘nalish<select
+                    name="specialty" id="editSpecialty"></select></label><label>Hudud<input
+                    name="region"></label><label>Tajriba<input name="experience"></label><label>Men haqimda<textarea
+                    name="bio" rows="4"></textarea></label><label>Minimal narx (so‘m)<input name="minPrice"
+                    type="number" min="0"></label><label>Maksimal narx (so‘m)<input name="maxPrice" type="number"
+                    min="0"></label><label>Profil rasmi<input id="avatarFile" type="file"
+                    accept="image/png,image/jpeg,image/webp"></label>
+            <div class="service-checks"><label><input type="checkbox" name="serviceTypes" value="home"> Mijozning
+                    uyida</label><label><input type="checkbox" name="serviceTypes" value="workplace"> O‘z
+                    ishxonasida</label><label><input type="checkbox" name="serviceTypes" value="client_location">
+                    Kelishilgan joyda</label><label><input type="checkbox" name="serviceTypes" value="remote">
+                    Onlayn</label></div><button class="primary-btn full">O‘zgarishlarni saqlash</button>
+        </form>
+        <p id="editMessage" class="form-message"></p>
+    </dialog>
+    <dialog id="filterDialog" class="auth-dialog">
+        <form method="dialog" class="dialog-close"><button>×</button></form>
+        <h2>Mutaxassislarni filtrlash</h2>
+        <form id="filterForm" class="auth-form"><label>Kasbiy yo‘nalish<select name="category" id="filterCategory">
+                    <option value="">Barcha yo‘nalishlar</option>
+                </select></label><label>Minimal narx (so‘m)<input name="minPrice" type="number" min="0"
+                    placeholder="Eng arzon narxdan"></label><label>Maksimal narx (so‘m)<input name="maxPrice"
+                    type="number" min="0" placeholder="Eng qimmat narxgacha"></label>
+            <div id="priceBounds" class="settings-note">Tanlangan yo‘nalishdagi mavjud narxlar aniqlanadi.</div>
+            <label>Eng kam reyting<select name="minRating">
+                    <option value="0">Barchasi</option>
+                    <option value="3">3 yulduz va yuqori</option>
+                    <option value="4">4 yulduz va yuqori</option>
+                    <option value="4.5">4.5 yulduz va yuqori</option>
+                </select></label><label>Xizmat ko‘rsatish joyi<select name="serviceType">
+                    <option value="">Barchasi</option>
+                    <option value="home">Mijozning uyida</option>
+                    <option value="workplace">Ustaning ishxonasida</option>
+                    <option value="client_location">Kelishilgan manzilda</option>
+                    <option value="remote">Masofadan / onlayn</option>
+                </select></label><label>Hudud<input name="region" placeholder="Masalan, Toshkent"></label>
+            <div class="form-actions"><button type="button" class="guest-btn" id="clearFilters">Tozalash</button><button
+                    class="primary-btn">Filtrlarni qo‘llash</button></div>
+        </form>
+    </dialog>
+    <dialog id="orderDialog" class="auth-dialog">
+        <form method="dialog" class="dialog-close"><button>×</button></form>
+        <h2>Buyurtma yuborish</h2>
+        <form id="orderForm" class="auth-form"><input type="hidden" name="specialistId"><label>Buyurtma nomi<input
+                    name="title" required maxlength="120"></label><label>Batafsil tavsif<textarea name="description"
+                    rows="4" required></textarea></label><label>Taklif qilinayotgan narx (so‘m)<input name="price"
+                    type="number" min="0"></label><button class="primary-btn full">Buyurtma yuborish</button></form>
+        <p id="orderMessage" class="form-message"></p>
+    </dialog>
+    <dialog id="ratingDialog" class="auth-dialog">
+        <form method="dialog" class="dialog-close"><button>×</button></form>
+        <h2>Mutaxassisni baholang</h2>
+        <form id="ratingForm" class="auth-form"><input type="hidden" name="orderId"><label>Reyting<select name="score"
+                    required>
+                    <option value="5">★★★★★ — 5</option>
+                    <option value="4">★★★★ — 4</option>
+                    <option value="3">★★★ — 3</option>
+                    <option value="2">★★ — 2</option>
+                    <option value="1">★ — 1</option>
+                </select></label><label>Izoh<textarea name="comment" rows="3"
+                    maxlength="1000"></textarea></label><button class="primary-btn full">Reytingni yuborish</button>
+        </form>
+        <p id="ratingMessage" class="form-message"></p>
+    </dialog>
+    <script src="/app.js" defer></script>
+</body>
+
+</html>

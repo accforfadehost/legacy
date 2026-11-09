@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": "82650106-f8cb-4d8b-8cef-f866a2e08881",
+      "name": "Erlan Amrakulov",
+      "firstName": "Erlan",
+      "lastName": "Amrakulov",
+      "email": "uzdigitalmaster@gmail.com",
+      "passwordHash": "$2a$12$VYQu/RN3Wl8bot4tJEekDuAa.mJmS88ytKTdXqM3BTZOq4FlbWfo.",
+      "role": "specialist",
+      "phone": "+998337730609",
+      "specialty": "Full-stack dasturchi",
+      "categoryGroup": "IT va dasturlash",
+      "bio": "",
+      "skills": [],
+      "experience": "",
+      "region": "Toshkent shahar, Ohangaron tumani, g'alla quduq MFY",
+      "serviceTypes": [],
+      "minPrice": null,
+      "maxPrice": null,
+      "avatar": "",
+      "createdAt": "2026-11-08T15:52:40.443Z"
+    },
+    {
+      "id": "cbf5ee93-2ff2-4a21-bdef-b52ac58216d0",
+      "name": "User Name",
+      "firstName": "User",
+      "lastName": "Name",
+      "email": "zaxidatulabayeva@gmail.com",
+      "passwordHash": "$2a$12$Z6k/bGHaLCzpQvDYVg90SuqbGAdnqEthl03/K4W1f94rIxW9.zl3u",
+      "role": "client",
+      "phone": "",
+      "specialty": "",
+      "categoryGroup": "",
+      "bio": "",
+      "skills": [],
+      "experience": "",
+      "region": "",
+      "serviceTypes": [],
+      "minPrice": null,
+      "maxPrice": null,
+      "avatar": "",
+      "createdAt": "2026-11-08T15:53:52.814Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "c9b666fe-a075-4661-90fb-6ac7c0ac0814",
+      "clientId": "cbf5ee93-2ff2-4a21-bdef-b52ac58216d0",
+      "specialistId": "82650106-f8cb-4d8b-8cef-f866a2e08881",
+      "title": "Hullas, Flutter loyihasni qilsh kerak",
+      "description": "bu odamlar uchun foydali bolin",
+      "price": 20,
+      "status": "completed",
+      "createdAt": "2026-11-08T15:55:00.759Z",
+      "updatedAt": "2026-11-08T15:55:40.633Z"
+    }
+  ],
+  "ratings": [
+    {
+      "id": "e11be134-8b7b-4a15-a220-a72bb734a2e9",
+      "orderId": "c9b666fe-a075-4661-90fb-6ac7c0ac0814",
+      "clientId": "cbf5ee93-2ff2-4a21-bdef-b52ac58216d0",
+      "specialistId": "82650106-f8cb-4d8b-8cef-f866a2e08881",
+      "score": 5,
+      "comment": "",
+      "createdAt": "2026-11-08T15:55:47.926Z"
+    }
+  ],
+  "favorites": [],
+  "teams": [],
+  "proposals": [],
+  "messages": []
+}
